@@ -21,3 +21,6 @@ rm -rf /tmp/camlistore
 rm /build.sh
 
 apk del gcc make
+
+ln -s /home/camlistore/var/camlistore /store
+ln -s /home/camlistore/.config/camlistore /config

@@ -10,7 +10,7 @@ RUN apk update && apk add --no-cache go git sqlite-dev
 ADD build.sh /build.sh
 RUN /build.sh
 
-VOLUME ["/home/camlistore/.config/camlistore", "/home/camlistore/var/camlistore"]
+VOLUME ["/config", "/store"]
 
 ADD run.sh /run.sh
 CMD /run.sh
