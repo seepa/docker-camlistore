@@ -3,7 +3,10 @@
 Run with 
 
 ```
-docker run -p 3179:3179 -v /host/path/to/config:/config -v /host/path/to/store:/store -it theorician/camlistore
+docker run -p 3179:3179 \
+  -v /host/path/to/config:/config \
+  -v /host/path/to/store:/store \
+  -it theorician/camlistore
 ```
 
 The first time it runs, it will generate server config files. I've deliberately 
