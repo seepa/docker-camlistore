@@ -5,9 +5,6 @@ die () {
   exit 1
 }
 
-addgroup -g $PGID camlistore
-adduser -u $PUID -G camlistore -D -s /bin/sh camlistore
-
 apk add --no-cache gcc make
 
 git clone https://github.com/camlistore/camlistore.git /tmp/camlistore
