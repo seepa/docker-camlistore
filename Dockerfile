@@ -1,9 +1,9 @@
-FROM alpine:3.4
+FROM golang:1.8-alpine
 MAINTAINER theorician
 
-ENV CAMLISTORE_GIT_TAG=0.9
+ENV UID=991 GID=991
 
-RUN apk update && apk add --no-cache go git sqlite-dev
+RUN apk update && apk add --no-cache git sqlite-dev su-exec
 
 ADD build.sh /build.sh
 RUN /build.sh
