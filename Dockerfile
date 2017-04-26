@@ -1,5 +1,5 @@
 FROM golang:1.8-alpine
-MAINTAINER theorician
+MAINTAINER seepa
 
 ENV UID=991 GID=991
 
